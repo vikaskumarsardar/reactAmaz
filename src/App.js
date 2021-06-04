@@ -1,11 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import New from './New'
+import JI from './JI'
+import J from './J'
+import {NavLink,BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <h2>swapan chutia hai  </h2>
+      <Router>
+
+      <New/>
+      <Switch>
+        
+    <Route path='/JI'>
+      <JI/>
+    </Route>
+    <Route path='/J'>
+      <J/>
+    </Route>
+      </Switch>
+      </Router>
+
+      
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
